@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Love Caona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/love.png">
+    <link rel="stylesheet" type="text/css" href="/lib/fullPage/css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/spinner.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script src="/lib/jquery/js/jquery-3.3.1.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/fullPage/js/jquery.fullPage.js"></script>
+    <script src="/lib/rainyday/js/rainyday.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        var isMobile;
+        var lastBtn = null;
+        var player=null;
+        isMobile = currentIsMobile();
+        window.onload = function(){
+            setTimeout(function(){
+                $("#animation").hide();
+                $("#container").show();
+            },1000);
+        }
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                controlArrows : !isMobile,
+                navigationPosition: 'right',
+                slidesNavigation: true,
+                scrollingSpeed:1000,
+            });
+            if(isMobile){
+                $("#ts").width("80%");
+                // $("#ts").addClass("img-responsive");
+            }
+            player = new MusicPlayer();
+            player.volume = 0.7;
+            player.init();
+        });
+    </script>
+</head>
+<body>
+    <audio class="music" mid="0" mname="Love story" preload="auto" style="display: none" controls src="/media/Taylor Swift - Love Story.mp3"></audio>
+    <audio class="music" mid="1" mname="樱花抄" preload="auto" style="display: none" controls src="/media/xuechi.mp3"></audio>
+    
+    <div id="animation">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <h2>Loading</h2>
+    </div>
+
+    <div id="container" style="display: none">
+        <div id="fullpage">
+
+            <div class="section page page-one">
+                <h1>"喜欢你"</h1>
+                <h3>是我最想告诉你的话语</h3>
+            </div>
+
+            <div class="section page page-song">
+                <div class="slide">
+                    <center>
+                        <img id="ts" src="/img/illust_13485713_20180609_175436.jpg">
+                    </center>
+                    
+                    <h3 style="margin-top: 0px">喜欢Taylor Swift?</h3>
+                    <h4>在Love Story下浏览本页面?</h4>
+                    <center>
+                        <button type="button" mid="0" class="btn btn-success btnMusic"></button><br>
+                    </center>
+                    <h4>右滑>></h4>
+                </div>
+                <div class="slide" style="
+                background-image: url('/img/3944590323639952880.jpg');
+                background-size: cover">
+                    <center>
+                        <h3>错了?或许你可以听听我喜欢的</h3>
+                        <h4>樱花抄</h4>
+                        <button type="button" mid="1" class="btn btn-success btnMusic"></button>
+                    </center>
+                </div>
+                
+            </div>
+
+            <div class="section page page-sec">
+                <h1>一直以来没能说出的</h1>
+                <h3>在这个雨季表达出来</h3>
+                <br><br>
+                <h4>唯有星辰仿佛要坠落的夜晚
+                    我欺骗不了
+                    <br>--One more time one more chance
+                </h4>
+            </div>
+
+            <div class="section page page-third">
+                <h1>暗恋,美好而无奈</h1>
+                <h3>在那么久之后,我才明白我心中真正想做的</h3>
+                <br>
+                <h4>难道总是失去后才明白
+                    <br>--One more time one more chance
+                </h4>
+            </div>
+
+            <div class="section page page-4">
+                <img width="100%" src="/img/illust_69118697_20180609_173058.jpg">
+                <h3 style="margin-top: 0px">直到现在,我才重新联系你</h3>
+                <h4 style="margin-top: 10px">思念如缤纷落樱堆积 化作皑皑细雪
+                    <br> --Late in autumn
+                </h4>
+            </div>
+
+            <div class="section page">
+                <h1>再一次的匿名表白</h1>
+                <h3>你对此的感受是什么?我无从得知</h3>
+                <h3>实际上我希望你能对此感到开心或激动</h3>
+                <br><br>
+                <h4>I know,I know I've let you down
+                    <br>--Komm,süsser Tod
+                </h4>
+            </div>
+
+            <div class="section page">
+                <h1>我不知道究竟该做什么</h1>
+                <h3>虽然可能已经失败<br>
+                    但我仍然用自己所学为你制作了这个网站
+                </h3>
+                <br><br>
+                <h4>In my dreams,I feel your light
+                    <br>--Take me hand
+                </h4>
+            </div>
+
+            <div class="section page page-future">
+                <h1>在未来</h1>
+                <h3>我仍然会喜欢你</h3>
+                <h3>我不希望我们真的再也无法相见</h3>
+                <br><br>
+                <h4>Not forget you.
+                    <br>--Open window
+                </h4>
+            </div>
+
+            <div class="section page page-forever">
+                <h1>这个网站将会一直存在</h1>
+                <h3>只要知道网址都可以访问,这是一种见证
+                    <br>当你感到失落或受挫时
+                    <br>进来看一看,或许你能感受到温暖
+                </h3>
+                <br><br>
+                <h4>I wish that I could turn back time
+                    <br>--Komm,süsser Tod
+                </h4>
+            </div>
+
+            <div class="section page">
+                <h1>最后,还有一个充满爱心的小惊喜</h1>
+                <h3>点击一下?</h3>
+                <img onclick="window.location='/tree'" src="/img/love.png">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

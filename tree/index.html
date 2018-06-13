@@ -1,0 +1,74 @@
+<!--
+爱你一万年表白源码（修复完善版）
+首发于孟坤博客（http://mkblog.cn）
+-->
+
+<!doctype html> 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>转身，一缕冷香远，逝雪深，笑意浅</title>
+    <link rel="shortcut icon" href="./img/love.png">
+    <link type="text/css" rel="stylesheet" href="./source/default.css">
+    <script type="text/javascript" src="./source/jquery.min.js"></script>
+    <script type="text/javascript" src="./source/jscex.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-parser.js"></script>
+    
+    <style type="text/css">
+    </style>
+    <script>
+        var lover = {};
+        lover.info = {
+            name: "点一下这里~", //点开时爱心桃旁边的字
+            year: 2013,     //相遇的年份
+            month: 9,      //月
+            day: 1,        //日
+            hour: 8,       //小时
+            minute: 0,     //分钟
+            second: 0,      //秒
+            debug: true,   //是否开启调试模式（如果选是，则会弹窗提示为什么加载出错）
+        }
+        $(document).ready(()=>{
+            document.getElementById("loveBgm").volume = 0.4;
+        });
+    </script>
+</head>
+<body>
+    <!-- 背景音乐部分 -->
+    <audio id="loveBgm" src="../media/xuechi.mp3" loop="loop"></audio>  
+
+	<div id="main">
+        <div id="error">
+            本页面采用HTML5编辑，目前您的浏览器无法显示，请换成(<a href="http://dl.360safe.com/netunion/20140425/360se+14478+n4a1de2568d.exe">360</a>)
+            或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。
+        </div>
+		<div id="wrap">
+			<div id="text">
+				<div id="code">
+                    <span class="say">我真的很喜欢你</span><br>
+                    <br>
+                    <span class="say">这个网站是送给你的礼物</span><br>
+                    <br>
+                    <span class="say">在我坠入深渊时,你是我为之奋斗的目标,直到永远</span><br>
+                    <br>
+                    <span class="say"> --爱你的2401</span>
+				</div>
+			</div>
+			<div id="clock-box">
+				<span><font color="#666666">我已经喜欢你</font></span>
+				<div id="clock"></div>
+			</div>
+			<canvas id="canvas" width="1100" height="680"></canvas>
+		</div>
+	</div>
+    <script type="text/javascript" src="./source/jscex-jit.js"></script>
+    <script type="text/javascript" src="./source/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./source/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./source/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./source/love.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./source/canvas.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/57-151106142142.jpg");
+    background-size: cover;
+}
+#container{
+    position: relative;
+}
+#animation{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fefefe;
+}
+.page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    text-align: center;
+}
+.page-future{
+    background-image: url("/img/57-151106142140-50.jpg");
+    background-size: cover;
+}
+.page-forever{
+    background-image: url("/img/341_170106113026_1.jpg");
+    background-size: cover;
+}
+.page-sec{
+    color: aliceblue;
+    background-image: url("/img/Rainy-day.png");
+    background-size: cover;
+}
+.page-song{
+    background-image: url("/img/19300001359806132696361265903.jpg");
+    background-size: cover;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #eee;
+}
+.fp-slidesNav.bottom {
+    bottom: 4px;
+}
