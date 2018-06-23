@@ -25,15 +25,27 @@
             setTimeout(function(){
                 $("#animation").hide();
                 $("#container").show();
-            },1000);
+            },0);
+        };
+        window.onresize=function(){  
+            resizeLiaVideo();
+        };
+        function resizeLiaVideo(){
+            console.log('wtf');
+            var width = $(window).width();
+            console.log(width);
+            $("#videoLia").width(width * 0.9)
+            $("#videoLia").height(width / 2.2)
         }
         $(document).ready(function(){
+            resizeLiaVideo();
             $("#fullpage").fullpage({
                 controlArrows : !isMobile,
                 navigationPosition: 'right',
                 slidesNavigation: true,
                 scrollingSpeed:1000,
-                scrollOverflow: true
+                scrollOverflow: true,
+                // verticalCentered: false,
             });
             if(isMobile){
                 $("#ts").width("80%");
@@ -42,6 +54,7 @@
             player = new MusicPlayer();
             player.volume = 0.7;
             player.init();
+           
         });
     </script>
 </head>
@@ -60,6 +73,7 @@
     <div id="container" style="display: none">
         <div id="fullpage">
 
+            
             <div class="section page page-one">
                 <h1>"喜欢你"</h1>
                 <h3>是我最想告诉你的话语</h3>
@@ -86,6 +100,16 @@
                         <h4>樱花抄</h4>
                         <button type="button" mid="1" class="btn btn-success btnMusic"></button>
                     </center>
+                </div>                                         
+                <div class="slide" style="
+                background-image: url('./img/57-151106142140-50.jpg');
+                background-size: cover">
+                        <iframe id="videoLia" src="//player.bilibili.com/player.html?aid=2345583&cid=3662647&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+                        </iframe>
+                        <h4>发自心底去想念一个人
+                            是你令我第一次拥有如此感受
+                            <br>--One more time one more chance
+                        </h4>
                 </div>
                 
             </div>
@@ -159,6 +183,8 @@
                     <br>--Komm,süsser Tod
                 </h4>
             </div>
+
+            
 
             <div class="section page">
                 <h1>最后,还有一个充满爱心的小惊喜</h1>
