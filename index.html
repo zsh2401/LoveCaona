@@ -39,6 +39,9 @@
         }
         $(document).ready(function(){
             resizeLiaVideo();
+            player = new MusicPlayer();
+            player.volume = 0.7;
+            player.init();
             $("#fullpage").fullpage({
                 controlArrows : !isMobile,
                 navigationPosition: 'right',
@@ -46,15 +49,18 @@
                 scrollingSpeed:1000,
                 scrollOverflow: true,
                 // verticalCentered: false,
+                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+                    console.log(nextSlideIndex);
+                    if(nextSlideIndex == 2){
+                        player.pause();
+                    }
+                }
             });
             if(isMobile){
                 $("#ts").width("80%");
                 // $("#ts").addClass("img-responsive");
             }
-            player = new MusicPlayer();
-            player.volume = 0.7;
-            player.init();
-           
+            
         });
     </script>
 </head>

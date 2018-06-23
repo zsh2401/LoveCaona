@@ -25,6 +25,12 @@ function MusicPlayer(){
             }
         }
     }
+    this.pause = function(){
+        if(this.playingComb != null){
+            this.playingComb.pause();
+            this.playingComb = null;
+        }
+    }
     this.playByBtn = function(btn){
         var nextId = btn.getAttribute("mid");
         if(this.playingComb != null && this.playingComb.id == nextId){
