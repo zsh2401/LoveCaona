@@ -12,9 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <script src="./lib/jquery/js/jquery-3.3.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./lib/fullPage/js/jquery.fullPage.js"></script>
-    <script src="./lib/rainyday/js/rainyday.min.js"></script>
     <script src="./lib/fullPage/js/scrollOverflow.js"></script>
+    <script src="./lib/fullPage/js/jquery.fullPage.js"></script>
     <script src="./js/main.js"></script>
     <script>
         var isMobile;
@@ -25,7 +24,7 @@
             setTimeout(function(){
                 $("#animation").hide();
                 $("#container").show();
-            },0);
+            },0);0
         };
         window.onresize=function(){  
             resizeLiaVideo();
@@ -44,11 +43,10 @@
                 controlArrows : !isMobile,
                 navigationPosition: 'right',
                 slidesNavigation: true,
-                scrollingSpeed:1000,
+                scrollingSpeed: 1000,
                 scrollOverflow: true,
                 // verticalCentered: false,
                 onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-                    console.log(nextSlideIndex);
                     if(nextSlideIndex == 2){
                         player.pause();
                     }
@@ -63,7 +61,7 @@
 </head>
 <body>
     <audio class="music" mid="0" mname="Love story" preload="auto" style="display: none" controls src="./media/Taylor Swift - Love Story.mp3"></audio>
-    <audio class="music" mid="1" mname="樱花抄" preload="auto" style="display: none" controls src="./media/xuechi.mp3"></audio>
+    <audio class="music" mid="1" mname="樱花抄" preload="auto" style="display: none" controls src="./media/yhc.mp3"></audio>
     
     <div id="animation">
         <div class="spinner">
@@ -76,7 +74,6 @@
     <div id="container" style="display: none">
         <div id="fullpage">
 
-            
             <div class="section page page-one">
                 <h1>"喜欢你"</h1>
                 <h3>是我最想告诉你的话语</h3>
@@ -95,6 +92,7 @@
                     </center>
                     <h4>右滑>></h4>
                 </div>
+
                 <div class="slide" style="
                 background-image: url('./img/3944590323639952880.jpg');
                 background-size: cover">
@@ -103,18 +101,18 @@
                         <h4>樱花抄</h4>
                         <button type="button" mid="1" class="btn btn-success btnMusic"></button>
                     </center>
-                </div>                                         
+                </div>
+
                 <div class="slide" style="
                 background-image: url('./img/57-151106142140-50.jpg');
                 background-size: cover">
-                        <iframe id="videoLia" src="//player.bilibili.com/player.html?aid=2345583&cid=3662647&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
-                        </iframe>
-                        <h4>发自心底去想念一个人
-                            是你令我第一次拥有如此感受
-                            <br>--One more time one more chance
-                        </h4>
+                    <iframe id="videoLia" 
+                        src="//player.bilibili.com/player.html?aid=11702385&cid=19363904&page=1" 
+                        scrolling="no" border="0" frameborder="no" 
+                        framespacing="0" allowfullscreen="true">
+                    </iframe>
+                    <h2>这个也不错?</h2>
                 </div>
-                
             </div>
 
             <div class="section page page-sec">
@@ -186,8 +184,6 @@
                     <br>--Komm,süsser Tod
                 </h4>
             </div>
-
-            
 
             <div class="section page">
                 <h1>最后,还有一个充满爱心的小惊喜</h1>
