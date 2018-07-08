@@ -55,13 +55,17 @@
             if(isMobile){
                 $("#ts").width("80%");
             }
-            
         });
     </script>
 </head>
 <body>
-    <audio class="music" mid="0" mname="Love story" style="display: none" controls src="./media/Taylor Swift - Love Story.mp3"></audio>
-    <audio class="music" mid="1" mname="樱花抄" style="display: none" controls src="./media/yhc.mp3"></audio>
+    <audio class="music" mid="0" mname="Love story" style="display: none" preload="auto" controls 
+        src="https://caona-1252709330.cos.ap-chengdu.myqcloud.com/media/Love_Story.mp3">
+    </audio>
+
+    <audio class="music" mid="1" mname="樱花抄" style="display: none" preload="auto" controls 
+        src="https://caona-1252709330.cos.ap-chengdu.myqcloud.com/media/yhc.mp3">
+    </audio>
     
     <div id="animation">
         <div class="spinner">
@@ -82,7 +86,7 @@
             <div class="section page page-song">
                 <div class="slide">
                     <center>
-                        <img id="ts" src="./img/illust_13485713_20180609_175436.jpg">
+                        <img id="ts" src="https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/illust_13485713_20180609_175436.webp">
                     </center>
                     
                     <h3 style="margin-top: 0px">喜欢Taylor Swift?</h3>
@@ -93,9 +97,7 @@
                     <h4>右滑>></h4>
                 </div>
 
-                <div class="slide" style="
-                background-image: url('./img/3944590323639952880.jpg');
-                background-size: cover">
+                <div class="slide slideYhc">
                     <center>
                         <h3>错了?或许你可以听听我喜欢的</h3>
                         <h4>樱花抄</h4>
@@ -103,9 +105,8 @@
                     </center>
                 </div>
 
-                <div class="slide" style="
-                background-image: url('./img/57-151106142140-50.jpg');
-                background-size: cover">
+                
+                <div class="slide slideVideo">
                     <iframe id="videoLia" 
                         src="//player.bilibili.com/player.html?aid=11702385&cid=19363904&page=1" 
                         scrolling="no" border="0" frameborder="no" 
@@ -135,7 +136,7 @@
             </div>
 
             <div class="section page page-4">
-                <img width="100%" src="./img/illust_69118697_20180609_173058.jpg">
+                <img width="100%" src="https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/illust_69118697_20180609_173058.webp">
                 <h3 style="margin-top: 0px">直到现在,我才重新联系你</h3>
                 <h4 style="margin-top: 10px">思念如缤纷落樱堆积 化作皑皑细雪
                     <br> --Late in autumn
@@ -188,7 +189,7 @@
             <div class="section page">
                 <h1>最后,还有一个充满爱心的小惊喜</h1>
                 <h3>点击一下?</h3>
-                <img onclick="window.location='/tree'" src="./img/love.png">
+                <img onclick="window.location='/tree'" src="https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/love.webp">
             </div>
 
         </div>

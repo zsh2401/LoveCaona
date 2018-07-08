@@ -22,22 +22,31 @@ body{
     text-align: center;
 }
 .page-future{
-    background-image: url("../img/57-151106142140-50.jpg");
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/57-151106142140-50.webp");
     background-size: cover;
 }
 .page-forever{
-    background-image: url("../img/341_170106113026_1.jpg");
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/341_170106113026_1.webp");
     background-size: cover;
 }
 .page-sec{
     color: aliceblue;
-    background-image: url("../img/Rainy-day.png");
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/Rainy-day.webp");
     background-size: cover;
 }
 .page-song{
-    background-image: url("../img/19300001359806132696361265903.jpg");
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/19300001359806132696361265903.webp");
     background-size: cover;
 }
+.slideYhc{
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/3944590323639952880.webp");
+    background-size: cover;
+}
+.slideVideo{
+    background-image: url("https://caona-1252709330.cos.ap-chengdu.myqcloud.com/img/57-151106142140-50.webp");
+    background-size: cover;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background: #eee;
